@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudan Project</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="video-chat-container">
+  <div class="video-chat-screen">
+    <p>Video Input</p>
+    <img id="placeholder-image" src="{{ url_for('static', filename='placeholder.jpg') }}" alt="Placeholder Image">
+    <video id="webcam-video" autoplay></video>
+    <canvas id="output-canvas" style="display: none;"></canvas>
+    <input type="text" id="chat-input" disabled>
+    <button id="clear-button">Clear</button>
+    <button id="submit-button">Submit</button>
+  </div>
+  <div class="video-chat-screen">
+    <p>Output</p>
+    <input type="text" id="chat-input-2" disabled>
+    <p id="output-letter"></p>
+</div>
+  <button id="webcam-button">Click to Access Webcam</button>
+</div>
+<script src="{{ url_for('static', filename='test.js') }}"></script>

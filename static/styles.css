@@ -1,0 +1,42 @@
+.video-chat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.video-chat-screen {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#chat-input {
+  margin-bottom: 10px;
+}
+
+#webcam-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
